@@ -15,11 +15,13 @@ import com.alibaba.dubbo.rpc.*;
 public class LogFilter implements Filter {
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
         //System.out.println("start============filter");
-
+        System.out.println("invoke start");
         Result result = invoker.invoke(invocation);
+
         if (result.hasException()) {
             System.out.println("异常异常异常");
         }
+        System.out.println("invoke end");
         //System.out.println("LogFilter result :" + new Gson().toJson(result == null ? "" : result));
         //System.out.println("end============filter");
         return result;

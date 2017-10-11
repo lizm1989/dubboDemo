@@ -1,6 +1,8 @@
 package com.dubbo.main;
 
 import com.dubbo.api.DemoService;
+import com.dubbo.error.ErrorCode;
+import com.dubbo.error.GaosiAssert;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
@@ -13,13 +15,12 @@ public class ConsumerStart {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"dubbo-consumer.xml"});
         context.start();
         DemoService demoService = (DemoService) context.getBean("demoService"); // 获取bean
-        // service
-        // invocation
-        // proxy
         try {
             demoService.sayHello(System.currentTimeMillis() + "");
-            System.out.println("=====================================");
-            demoService.sayHello("exception");
+//            System.out.println("=====================================");
+//            demoService.sayHello("exception");
+
+
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
