@@ -1,6 +1,7 @@
 package com.dubbo.service;
 
 import com.dubbo.api.DemoService;
+import com.dubbo.error.GaosiException;
 
 
 /**
@@ -11,10 +12,11 @@ import com.dubbo.api.DemoService;
 public class DemoServiceImpl implements DemoService {
 
 
-    public void sayHello(String msg) throws Exception {
+    public void sayHello(String msg) {
         System.out.println("DemoServiceImpl,msg=" + msg);
         if ("exception".equals(msg)) {
-            throw new Exception();
+            System.out.println("DemoServiceImpl  exceptionexceptionexceptionexception");
+            throw new GaosiException("aa");
         }
     }
 }
