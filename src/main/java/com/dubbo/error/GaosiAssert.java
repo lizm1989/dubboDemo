@@ -8,9 +8,9 @@ import java.util.Collection;
 import java.util.Map;
 
 /**
- * gaosiAssert
+ * Assert
  *
- * @author sunxueqiang
+ * @author
  */
 public final class GaosiAssert {
 

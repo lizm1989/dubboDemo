@@ -1,12 +1,11 @@
 package com.dubbo.error;
 
 
-import com.dubbo.error.ErrorCode;
 
 /**
  * 公共异常类.
  *
- * @author dingqihui
+ *
  */
 public class GaosiException extends RuntimeException {
 

@@ -23,6 +23,6 @@ public class DemoServiceImpl implements DemoService {
 //        }
 
         Preconditions.checkArgument(false);
-        //  GaosiAssert.notNull(null, ErrorCode.ACF_30001, "is.null");
+        //  GaosiAssert.notNull(null, ErrorCode.ACS_10001, "is.null");
     }
 }
