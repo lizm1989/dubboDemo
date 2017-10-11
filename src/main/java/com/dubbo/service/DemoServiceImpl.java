@@ -2,11 +2,10 @@ package com.dubbo.service;
 
 import com.dubbo.api.DemoService;
 
-import java.util.Map;
-
 
 /**
  * @author lizhiming  2017/8/24 14:08
+ * 实现类
  */
 
 public class DemoServiceImpl implements DemoService {

@@ -1,15 +1,14 @@
 package com.dubbo.main;
 
-import com.dubbo.service.DemoServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.io.IOException;
 
 /**
  * @author Administrator
+ * 生成者
  */
 public class ProviderStart {
     private static final Logger logger = LoggerFactory.getLogger(ProviderStart.class);

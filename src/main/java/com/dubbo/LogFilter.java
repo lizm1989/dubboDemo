@@ -8,6 +8,8 @@ import com.alibaba.dubbo.rpc.*;
  * @author lizhiming  2017/10/11 14:04
  * Constants.PROVIDER 生成者有效
  * Constants.CONSUMER 消费者有效
+ * <p>
+ * 拦截器，可以做日志拦截、权限等
  */
 @Activate(group = {Constants.PROVIDER, Constants.CONSUMER}, order = -9000)
 public class LogFilter implements Filter {
