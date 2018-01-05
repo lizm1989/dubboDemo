@@ -13,6 +13,7 @@ import com.alibaba.dubbo.rpc.*;
  */
 @Activate(group = {Constants.PROVIDER, Constants.CONSUMER}, order = -9000)
 public class LogFilter implements Filter {
+    @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
         //System.out.println("start============filter");
         System.out.println("invoke start");

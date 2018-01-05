@@ -27,8 +27,9 @@ public class ProviderStart {
         ApplicationContext context = new ClassPathXmlApplicationContext(CONFIG_FILE_SPRING);
         String[] names = context.getBeanDefinitionNames();
         System.out.println("---------------------------Beans:");
-        for (String string : names)
+        for (String string : names) {
             System.out.println(string + ",");
+        }
         System.out.println("--------------------------");
     }
 

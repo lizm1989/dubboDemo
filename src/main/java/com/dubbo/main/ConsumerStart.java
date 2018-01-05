@@ -1,8 +1,6 @@
 package com.dubbo.main;
 
 import com.dubbo.api.DemoService;
-import com.dubbo.error.ErrorCode;
-import com.dubbo.error.GaosiAssert;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 

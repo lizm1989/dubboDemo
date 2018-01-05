@@ -1,9 +1,6 @@
 package com.dubbo.service;
 
 import com.dubbo.api.DemoService;
-import com.dubbo.error.ErrorCode;
-import com.dubbo.error.GaosiAssert;
-import com.dubbo.error.GaosiException;
 import com.google.common.base.Preconditions;
 
 
@@ -15,14 +12,13 @@ import com.google.common.base.Preconditions;
 public class DemoServiceImpl implements DemoService {
 
 
+    @Override
     public void sayHello(String msg) {
         System.out.println("DemoServiceImpl,msg=" + msg);
 //        if ("exception".equals(msg)) {
 //            System.out.println("DemoServiceImpl 错误信息");
-//            throw new GaosiException("aa");
 //        }
 
         Preconditions.checkArgument(false);
-        //  GaosiAssert.notNull(null, ErrorCode.ACS_10001, "is.null");
     }
 }
